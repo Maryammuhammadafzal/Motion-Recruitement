@@ -49,19 +49,19 @@
 :root {
   --radius: 0.625rem;
   --background: #EEEEEE;
-  --foreground: oklch(0.145 0 0);
+  --foreground: #4988C4;
   --card: #EEEEEE;
-  --card-foreground: oklch(0.145 0 0);
+  --card-foreground: #4988C4;
   --popover: #EEEEEE;
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: #5C6F2B;
+  --popover-foreground: #4988C4;
+  --primary: #0F2854;
   --primary-foreground: #D8C9A7;
-  --secondary: #DE802B;
-  --secondary-foreground: #5C6F2B;
-  --muted: #DE802B;
+  --secondary: #1C4D8D;
+  --secondary-foreground: #0F2854;
+  --muted: #1C4D8D;
   --muted-foreground: oklch(0.556 0 0);
-  --accent: #DE802B;
-  --accent-foreground: #5C6F2B;
+  --accent: #1C4D8D;
+  --accent-foreground: #0F2854;
   --destructive: oklch(0.577 0.245 27.325);
   --border: oklch(0.922 0 0);
   --input: oklch(0.922 0 0);
@@ -72,24 +72,24 @@
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
   --sidebar: #D8C9A7;
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: #5C6F2B;
+  --sidebar-foreground: #4988C4;
+  --sidebar-primary: #0F2854;
   --sidebar-primary-foreground: #D8C9A7;
-  --sidebar-accent: #DE802B;
-  --sidebar-accent-foreground: #5C6F2B;
+  --sidebar-accent: #1C4D8D;
+  --sidebar-accent-foreground: #0F2854;
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
 }
 
 .dark {
-  --background: oklch(0.145 0 0);
+  --background: #4988C4;
   --foreground: #D8C9A7;
-  --card: #5C6F2B;
+  --card: #0F2854;
   --card-foreground: #D8C9A7;
-  --popover: #5C6F2B;
+  --popover: #0F2854;
   --popover-foreground: #D8C9A7;
   --primary: oklch(0.922 0 0);
-  --primary-foreground: #5C6F2B;
+  --primary-foreground: #0F2854;
   --secondary: oklch(0.269 0 0);
   --secondary-foreground: #D8C9A7;
   --muted: oklch(0.269 0 0);
@@ -105,7 +105,7 @@
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: #5C6F2B;
+  --sidebar: #0F2854;
   --sidebar-foreground: #D8C9A7;
   --sidebar-primary: oklch(0.488 0.243 264.376);
   --sidebar-primary-foreground: #D8C9A7;
@@ -122,4 +122,9 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+
+.word-spacing {
+  word-spacing: 16px;
 }
