@@ -6,7 +6,7 @@ import { Button } from './ui/button'
 const Header = () => {
   return (
 
-    <nav className="fixed bg-background w-full z-20  top-0 start-0 pt-4 px-4 rounded-2xl border-default">
+    <nav className="fixed bg-background shadow-sm shadow-background w-full z-20  top-0 start-0 pt-4 px-4 rounded-2xl border-default">
       <div className="w-full bg-primary rounded-2xl px-6 flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center pl-6 space-x-3 rtl:space-x-reverse">
           <img src="/images/logo.svg" className="h-9" alt="Logo" />

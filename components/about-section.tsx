@@ -32,7 +32,7 @@ const AboutSection = () => {
       <div className="max-w-3xl mb-8 lg:mb-16 flex flex-col items-center text-center">
          <Badge className='px-3 py-1 my-10 bg-primary/20 text-primary text-sm'> Built for Long Term Success </Badge>
           <h2 className="mb-4 text-4xl tracking-tight max-w-lg text-center font-semibold text-primary ">A Simple, Proven Hiring & Career Process</h2>
-          <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8  lg:text-base ">We remove complexity from tech hiring and job searching. Our structured, human-first process ensures the right match — faster, clearer, and with long-term success in mind.</p>
+          <p className="max-w-2xl mb-10 font-light text-primary/70 lg:mb-8  lg:text-base ">We remove complexity from tech hiring and job searching. Our structured, human first process ensures the right match faster, clearer, and with long term success in mind.</p>
       </div>
       <div className="space-y-8 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-12 md:space-y-0">
         {aboutData.map((data, index)=> (
