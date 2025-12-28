@@ -8,38 +8,61 @@ import {
 } from "@/components/ui/accordion"
 
 const FaqSection = () => {
+    const faqs = [
+        {
+            value: "item-1",
+            question: "How do I apply for a job?",
+            answer: "You can browse open roles on our website and apply directly, or submit your resume to be considered for current and future opportunities."
+        },
+        {
+            value: "item-2",
+            question: "Is there any cost to job seekers?",
+            answer: "No. Our recruitment services are completely free for candidates."
+        },
+        {
+            value: "item-3",
+            question: "What types of roles do you offer?",
+            answer: "We offer contract, permanent, and remote roles across frontend, backend, DevOps, data, design, and other tech disciplines."
+        },
+        {
+            value: "item-4",
+            question: "Do you help with interview preparation?",
+            answer: "Yes. Our recruiters provide interview guidance, company insights, and feedback to help you perform confidently."
+        },
+        {
+            value: "item-5",
+            question: "Can I apply if I don’t see a matching role?",
+            answer: "Absolutely. Submit your resume and we'll reach out when a suitable opportunity becomes available."
+        },
+    ]
     return (
-        <section className="w-full bg-image h-auto flex justify-center rounded-2xl items-center">
-            <div className="py-8  mx-auto max-w-7xl w-full flex flex-col items-center sm:py-16 ">
-                <div className="max-w-3xl flex flex-col items-center text-center">
-                    <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'> Live Tech Opportunities </Badge>
-                    <h2 className="mb-4 text-4xl tracking-tight max-w-lg text-center font-semibold text-primary ">Explore Open Tech Roles</h2>
-                    <p className="max-w-2xl mb-10 font-light text-primary/70 lg:mb-8 lg:text-base ">Browse current opportunities across top tech roles. Contract or permanent, remote or on-site — find positions that match your skills and career goals.</p>
+        <section className="w-full h-auto flex justify-center rounded-2xl items-center">
+            <div className="py-4  mx-auto max-w-7xl w-full flex flex-col gap-6 items-center sm:py-4 ">
+                <div className="max-w-2xl flex flex-col items-center text-center">
+                    <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'>Questions, Answered </Badge>
+                    <h2 className="mb-4 text-4xl tracking-tight max-w-lg text-center font-semibold text-primary ">Frequently Asked Question</h2>
+                    <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8 lg:text-base ">Find quick answers about our recruitment process, job opportunities, and hiring solutions.</p>
                 </div>
-                <div className="space-y-8 flex flex-col md:gap-12 w-full md:space-y-0">
+                <div className="space-y-8 max-w-2xl bg-primary/5 text-primary p-6 rounded-2xl flex flex-col md:gap-12 w-full md:space-y-0">
                     <Accordion
                         type="single"
                         collapsible
                         className="w-full"
                         defaultValue="item-1"
                     >
-                        <AccordionItem value="item-1">
-                            <AccordionTrigger>Product Information</AccordionTrigger>
-                            <AccordionContent className="flex flex-col gap-4 text-balance">
-                                <p>
-                                    Our flagship product combines cutting-edge technology with sleek
-                                    design. Built with premium materials, it offers unparalleled
-                                    performance and reliability.
-                                </p>
-                                <p>
-                                    Key features include advanced processing capabilities, and an
-                                    intuitive user interface designed for both beginners and experts.
-                                </p>
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="item-2">
-                            <AccordionTrigger>Shipping Details</AccordionTrigger>
-                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                        {faqs.map((faq, index) => (
+                            <AccordionItem key={index} value={faq.value}>
+                                <AccordionTrigger className='font-medium'>{faq.question}</AccordionTrigger>
+                                <AccordionContent className="flex flex-col bg-background rounded-xl p-2 gap-4 text-balance">
+                                    <p>
+                                        {faq.answer}
+                                    </p>
+                                </AccordionContent>
+                            </AccordionItem>
+                        ))}
+                        {/* <AccordionItem value="item-2">
+                            <AccordionTrigger className='font-medium'>Shipping Details</AccordionTrigger>
+                            <AccordionContent className="flex flex-col bg-background rounded-xl gap-4 text-balance">
                                 <p>
                                     We offer worldwide shipping through trusted courier partners.
                                     Standard delivery takes 3-5 business days, while express shipping
@@ -52,8 +75,8 @@ const FaqSection = () => {
                             </AccordionContent>
                         </AccordionItem>
                         <AccordionItem value="item-3">
-                            <AccordionTrigger>Return Policy</AccordionTrigger>
-                            <AccordionContent className="flex flex-col gap-4 text-balance">
+                            <AccordionTrigger className='font-medium' >Return Policy</AccordionTrigger>
+                            <AccordionContent className="flex flex-col bg-background rounded-xl gap-4 text-balance">
                                 <p>
                                     We stand behind our products with a comprehensive 30-day return
                                     policy. If you&apos;re not completely satisfied, simply return the
@@ -65,7 +88,7 @@ const FaqSection = () => {
                                     item.
                                 </p>
                             </AccordionContent>
-                        </AccordionItem>
+                        </AccordionItem> */}
                     </Accordion>
 
                 </div>

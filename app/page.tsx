@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about-section";
+import FaqSection from "@/components/faq-section";
 import FeaturedSection from "@/components/featured-section";
 // import FeaturedSection from "@/components/featured-section";
 import Header from "@/components/header";
@@ -21,6 +22,7 @@ export default function Home() {
         <JobSection/>
         <FeaturedSection/>
         <TestimonialSection/>
+        <FaqSection/>
       </main>
     </div>
   );

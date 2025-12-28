@@ -44,7 +44,7 @@ const TestimonialSection = () => {
                     <p className="max-w-2xl mb-10 font-light text-primary/70 lg:mb-8 lg:text-base ">From career growth to successful hires, hear how professionals and companies achieve results through our recruitment expertise.</p>
                 </div>
                 <div className="space-y-3 flex justify-between gap-3 h-[500px] md:gap-4 px-6 w-full md:space-y-0">
-                    <Marquee className='rotate-90'>
+                    <Marquee pauseOnHover speed={30} className=' rotate-90'>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (
@@ -83,7 +83,7 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    <Marquee className=' rotate-90 '>
+                    <Marquee pauseOnHover speed={30} className=' rotate-90 '>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (
@@ -122,7 +122,7 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    <Marquee className=' rotate-90 '>
+                    <Marquee pauseOnHover speed={30} className=' rotate-90 '>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (
