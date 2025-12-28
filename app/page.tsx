@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about-section";
+import FeaturedSection from "@/components/featured-section";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
 import SlidingText from "@/components/sliding-text";
@@ -14,6 +15,7 @@ export default function Home() {
         </div>
         <AboutSection />
         <SlidingText />
+        <FeaturedSection/>
       </main>
     </div>
   );

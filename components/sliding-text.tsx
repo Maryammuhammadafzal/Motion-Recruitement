@@ -4,12 +4,12 @@ import Marquee from 'react-fast-marquee'
 
 const SlidingText = () => {
     return (
-        <Marquee>
+        <Marquee className='mb-10'>
             <div className="overflow-hidden  text-primary">
                 <div className="flex items-center whitespace-nowrap animate-marquee gap-12 py-6">
                     {[...Array(8)].map((_, i) => (
-                        <h3 key={i} className="flex gap-12 font-bold text-7xl items-center">
-                            Real Jobs. Real Connections. <Sparkle size={38} />
+                        <h3 key={i} className="flex gap-12 font-bold text-5xl items-center">
+                            Real Jobs. Real Connections. <Sparkle size={38} className='mr-2' />
                         </h3>
                     ))}
                 </div>
