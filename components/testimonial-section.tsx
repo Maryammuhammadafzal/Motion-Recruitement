@@ -83,7 +83,7 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    <Marquee pauseOnHover direction='right' speed={30} className=' rotate-90 '>
+                    <Marquee pauseOnHover direction='right' speed={30} className='max-md:hidden rotate-90 '>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (
@@ -122,7 +122,7 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    <Marquee pauseOnHover speed={30} className=' rotate-90 '>
+                    <Marquee pauseOnHover speed={30} className=' max-lg:hidden rotate-90 '>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (
@@ -161,27 +161,6 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    {/* {featuredData.slice(1, 5).map((data, index) => (
-                        <div key={index} className='bg-white shadow-sm shadow-foreground/50 hover:shadow-lg hover:shadow-foreground flex justify-between  rounded-2xl p-6'>
-                            <div className='flex flex-col'>
-                                <div className="flex justify-center font-medium text-sm text-primary w-fit gap-3 items-center mb-6 ">
-                                    {<data.icon />} Airbnb
-                                    </div>
-                                <h3 className="mb-2 text-xl font-medium text-primary">{data.title}</h3>
-                                <p className="text-primary/70 text-sm">{data.description}</p>
-                                <div className='flex w-auto'>
-                                    {data.skills?.map((skill, index) => (
-                                        <Badge key={index} className='px-4 mr-3 py-2 my-3 bg-background text-primary border border-primary/50 text-sm'> {skill}</Badge>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className='w-fit h-fit'>
-                                <p className='text-xl my-3 text-primary/50'><span className='text-xl text-primary'>${data.salary}</span>/year</p>
-                                <p className='text-sm text-foreground'>{data.location}</p>
-                            </div>
-                        </div>
-                    ))} */}
-
                 </div>
             </div>
         </section>

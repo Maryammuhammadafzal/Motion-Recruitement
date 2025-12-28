@@ -75,7 +75,7 @@ const Header = () => {
           </ul>
 
         </div>
-        <Button className='hidden md:block bg-background text-primary rounded-full font-medium px-6'>Login</Button>
+        <Button className='hidden md:block bg-background hover:bg-background/90 text-primary rounded-full font-medium px-6'>Login</Button>
       </div>
     </nav>
 

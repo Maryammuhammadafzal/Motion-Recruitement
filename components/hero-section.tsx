@@ -24,9 +24,9 @@ const HeroSection = () => {
                             <h2 className='text-xl max-w-[200px] font-medium'>Successfully connected over <span className='text-foreground'>1,000 businesses</span> with top talent.</h2>
                             <p className='text-sm  max-w-[200px]'> <span className='text-foreground'>Reducing hiring time by 30%</span>  and improving team efficiency across industries.</p>
                         </div>
-                        <div className='absolute -top-10 right-0 w-[300px] h-[450px] rounded-2xl'>
+                        <div className='absolute -top-10 xl:right-0 -right-6 w-[300px] h-[450px] rounded-2xl'>
                             <div className='w-full h-full relative'>
-                                <Image src={'/images/hero-image-1.jpg'} alt='people-image' width={300} height={350} className='h-full shadow-xl w-full rounded-2xl' />
+                                <Image src={'/images/hero-image-1.jpg'} alt='people-image' width={350} height={350} className='h-full shadow-xl w-full rounded-2xl' />
                                 <div className='absolute p-4 top-0 left-0 flex flex-col  justify-between w-full h-full'>
                                     <Badge className=' px-3 py-1 bg-background text-primary text-xs'> Top rated specialist </Badge>
                                     <div className='flex flex-col pb-6'>
