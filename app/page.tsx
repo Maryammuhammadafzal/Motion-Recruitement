@@ -1,6 +1,7 @@
 import AboutSection from "@/components/about-section";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
+import SlidingText from "@/components/sliding-text";
 import Image from "next/image";
 
 export default function Home() {
@@ -11,8 +12,8 @@ export default function Home() {
           <Header />
           <HeroSection />
         </div>
-          <AboutSection/>
-
+        <AboutSection />
+        <SlidingText />
       </main>
     </div>
   );
