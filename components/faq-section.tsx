@@ -1,4 +1,4 @@
-import { Badge } from 'lucide-react'
+
 import React from 'react'
 import {
     Accordion,
@@ -6,6 +6,7 @@ import {
     AccordionItem,
     AccordionTrigger,
 } from "@/components/ui/accordion"
+import { Badge } from './ui/badge'
 
 const FaqSection = () => {
     const faqs = [
@@ -39,7 +40,7 @@ const FaqSection = () => {
         <section className="w-full h-auto flex justify-center rounded-2xl items-center">
             <div className="py-4  mx-auto max-w-7xl w-full flex flex-col gap-6 items-center sm:py-4 ">
                 <div className="max-w-2xl flex flex-col items-center text-center">
-                    <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'>Questions, Answered </Badge>
+                    <Badge className='px-3 py-1 my-10 bg-primary/20 text-primary text-sm'>Questions, Answered </Badge>
                     <h2 className="mb-4 text-4xl tracking-tight max-w-lg text-center font-semibold text-primary ">Frequently Asked Question</h2>
                     <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8 lg:text-base ">Find quick answers about our recruitment process, job opportunities, and hiring solutions.</p>
                 </div>
@@ -52,7 +53,7 @@ const FaqSection = () => {
                     >
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={faq.value}>
-                                <AccordionTrigger className='font-medium'>{faq.question}</AccordionTrigger>
+                                <AccordionTrigger className='font-medium text-base'>{faq.question}</AccordionTrigger>
                                 <AccordionContent className="flex flex-col bg-background rounded-xl px-2 py-4 gap-4 text-balance">
                                     <p>
                                         {faq.answer}
@@ -60,35 +61,6 @@ const FaqSection = () => {
                                 </AccordionContent>
                             </AccordionItem>
                         ))}
-                        {/* <AccordionItem value="item-2">
-                            <AccordionTrigger className='font-medium'>Shipping Details</AccordionTrigger>
-                            <AccordionContent className="flex flex-col bg-background rounded-xl gap-4 text-balance">
-                                <p>
-                                    We offer worldwide shipping through trusted courier partners.
-                                    Standard delivery takes 3-5 business days, while express shipping
-                                    ensures delivery within 1-2 business days.
-                                </p>
-                                <p>
-                                    All orders are carefully packaged and fully insured. Track your
-                                    shipment in real-time through our dedicated tracking portal.
-                                </p>
-                            </AccordionContent>
-                        </AccordionItem>
-                        <AccordionItem value="item-3">
-                            <AccordionTrigger className='font-medium' >Return Policy</AccordionTrigger>
-                            <AccordionContent className="flex flex-col bg-background rounded-xl gap-4 text-balance">
-                                <p>
-                                    We stand behind our products with a comprehensive 30-day return
-                                    policy. If you&apos;re not completely satisfied, simply return the
-                                    item in its original condition.
-                                </p>
-                                <p>
-                                    Our hassle-free return process includes free return shipping and
-                                    full refunds processed within 48 hours of receiving the returned
-                                    item.
-                                </p>
-                            </AccordionContent>
-                        </AccordionItem> */}
                     </Accordion>
 
                 </div>

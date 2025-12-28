@@ -4,7 +4,7 @@ import { BriefcaseBusiness, Cloud, Code, Compass, Cpu, Database, LineChart, Pale
 
 
 const JobSection = () => {
-  const featuredData = [
+    const featuredData = [
         {
             title: "Frontend Developer",
             skills: ["HTML", "CSS", "JavaScript", "React"],
@@ -102,6 +102,8 @@ const JobSection = () => {
                     ))}
 
                 </div>
+                <a href="#" className="inline-flex mt-6 items-center justify-center px-8  py-3 mr-3 text-base font-medium text-center text-background bg-primary hover:bg-secondary rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    Show More  </a>
             </div>
         </section>
     )

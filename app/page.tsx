@@ -1,6 +1,7 @@
 import AboutSection from "@/components/about-section";
 import FaqSection from "@/components/faq-section";
 import FeaturedSection from "@/components/featured-section";
+import Footer from "@/components/footer";
 // import FeaturedSection from "@/components/featured-section";
 import Header from "@/components/header";
 import HeroSection from "@/components/hero-section";
@@ -19,10 +20,11 @@ export default function Home() {
         </div>
         <AboutSection />
         <SlidingText />
-        <JobSection/>
-        <FeaturedSection/>
-        <TestimonialSection/>
-        <FaqSection/>
+        <JobSection />
+        <FeaturedSection />
+        <TestimonialSection />
+        <FaqSection />
+        <Footer />
       </main>
     </div>
   );

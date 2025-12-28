@@ -36,7 +36,7 @@ const TestimonialSection = () => {
         }
     ];
     return (
-        <section className="w-full py-4 h-auto overflow-hidden flex justify-center  items-center">
+        <section className="w-full py-8 h-auto overflow-hidden flex justify-center  items-center">
             <div className="py-4  mx-auto max-w-7xl bg-primary/10 rounded-2xl w-full flex flex-col items-center ">
                 <div className="max-w-3xl flex flex-col items-center text-center">
                     <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'> Trusted by Candidates & Employers </Badge>
@@ -83,7 +83,7 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    <Marquee pauseOnHover speed={30} className=' rotate-90 '>
+                    <Marquee pauseOnHover direction='right' speed={30} className=' rotate-90 '>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (
