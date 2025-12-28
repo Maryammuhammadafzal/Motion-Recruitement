@@ -53,7 +53,7 @@ const FaqSection = () => {
                         {faqs.map((faq, index) => (
                             <AccordionItem key={index} value={faq.value}>
                                 <AccordionTrigger className='font-medium'>{faq.question}</AccordionTrigger>
-                                <AccordionContent className="flex flex-col bg-background rounded-xl p-2 gap-4 text-balance">
+                                <AccordionContent className="flex flex-col bg-background rounded-xl px-2 py-4 gap-4 text-balance">
                                     <p>
                                         {faq.answer}
                                     </p>
