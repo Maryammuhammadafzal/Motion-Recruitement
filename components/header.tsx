@@ -6,8 +6,8 @@ import { Button } from './ui/button'
 const Header = () => {
   return (
 
-    <nav className="fixed w-full z-20  top-0 start-0 border-b py-1 pt-3 border-default">
-      <div className="max-w-screen-xl bg-secondary rounded-full px-6 flex flex-wrap items-center justify-between mx-auto p-4">
+    <nav className="fixed bg-background w-full z-20  top-0 start-0 pt-4 px-4 rounded-2xl border-default">
+      <div className="w-full bg-primary rounded-2xl px-6 flex flex-wrap items-center justify-between mx-auto p-4">
         <a href="#" className="flex items-center pl-6 space-x-3 rtl:space-x-reverse">
           <img src="/images/logo.svg" className="h-9" alt="Logo" />
         </a>
@@ -75,9 +75,10 @@ const Header = () => {
           </ul>
 
         </div>
-        <Button className='hidden md:block bg-background text-primary rounded-full px-6'>Login</Button>
+        <Button className='hidden md:block bg-background text-primary rounded-full font-medium px-6'>Login</Button>
       </div>
     </nav>
+
 
   )
 }
