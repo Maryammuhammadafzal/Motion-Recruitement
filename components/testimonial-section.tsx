@@ -122,7 +122,7 @@ const TestimonialSection = () => {
 
                         </div>
                     </Marquee>
-                    <Marquee pauseOnHover speed={30} className=' max-lg:hidden rotate-90 '>
+                    <Marquee pauseOnHover speed={30} className='lg:block hidden rotate-90 '>
                         <div className="overflow-hidden h-auto text-primary">
                             <div className="flex h-auto items-center py-6 animate-marquee whitespace-nowrap">
                                 {testimonials.map((data, index) => (

@@ -18,7 +18,7 @@ const Footer = () => {
                     <div className="grid grid-cols-2 gap-12 sm:gap-12 sm:grid-cols-4">
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Comapny</h2>
-                            <ul className="text-body space-y-3 text-sm">
+                            <ul className="text-body space-y-3 lg:text-sm text-xs">
                                 <li className="">
                                     <a href="#" className="hover:underline">About us</a>
                                 </li>
@@ -38,7 +38,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Candidates</h2>
-                            <ul className="text-body space-y-3 text-sm">
+                            <ul className="text-body space-y-3 lg:text-sm text-xs">
                                 <li className="">
                                     <a href="#" className="hover:underline ">Find Jobs</a>
                                 </li>
@@ -58,7 +58,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Employers</h2>
-                            <ul className="text-body space-y-3 text-sm">
+                            <ul className="text-body space-y-3 lg:text-sm text-xs">
                                 <li className="">
                                     <a href="#" className="hover:underline">Hire Talent</a>
                                 </li>
@@ -78,7 +78,7 @@ const Footer = () => {
                         </div>
                         <div>
                             <h2 className="mb-6 text-sm font-semibold text-heading uppercase">Resources</h2>
-                            <ul className="text-body space-y-3 text-sm">
+                            <ul className="text-body space-y-3 lg:text-sm text-xs">
                                 <li className="">
                                     <a href="#" className="hover:underline">FAQs</a>
                                 </li>

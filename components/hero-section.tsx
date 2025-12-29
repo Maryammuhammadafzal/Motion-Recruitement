@@ -18,9 +18,9 @@ const HeroSection = () => {
                         Hire Talent
                     </a>
                 </div>
-                <div className="hidden lg:mt-0 px-6 pt-10 lg:col-span-6  lg:flex">
-                    <div className='h-auto w-full flex justify-center relative items-center'>
-                        <div className='w-full bg-primary h-[350px] flex flex-col justify-between text-background p-6 rounded-2xl'>
+                <div className=" lg:mt-0 px-6 pt-10 lg:col-span-6 lg:mt-0 my-12 lg:flex ">
+                    <div className='h-auto w-full flex lg:justify-center justify-end relative items-center'>
+                        <div className='lg:w-full w-[560px]  bg-primary h-[350px] flex flex-col justify-between text-background p-6 rounded-2xl'>
                             <h2 className='text-xl max-w-[200px] font-medium'>Successfully connected over <span className='text-foreground'>1,000 businesses</span> with top talent.</h2>
                             <p className='text-sm  max-w-[200px]'> <span className='text-foreground'>Reducing hiring time by 30%</span>  and improving team efficiency across industries.</p>
                         </div>

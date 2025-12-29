@@ -8,7 +8,7 @@ const SlidingText = () => {
             <div className="overflow-hidden  text-primary">
                 <div className="flex items-center whitespace-nowrap animate-marquee gap-12 py-6">
                     {[...Array(8)].map((_, i) => (
-                        <h3 key={i} className="flex gap-12 font-bold text-5xl items-center">
+                        <h3 key={i} className="flex gap-12 font-bold lg:text-5xl text-4xl items-center">
                             Real Jobs. Real Connections. <Sparkle size={38} className='mr-2' />
                         </h3>
                     ))}
