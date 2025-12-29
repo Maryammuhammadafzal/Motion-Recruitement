@@ -18,13 +18,13 @@ const HeroSection = () => {
                         Hire Talent
                     </a>
                 </div>
-                <div className=" lg:mt-0 px-6 pt-10 lg:col-span-6 lg:mt-0 my-12 lg:flex ">
-                    <div className='h-auto w-full flex lg:justify-center justify-end relative items-center'>
-                        <div className='lg:w-full w-[560px]  bg-primary h-[350px] flex flex-col justify-between text-background p-6 rounded-2xl'>
-                            <h2 className='text-xl max-w-[200px] font-medium'>Successfully connected over <span className='text-foreground'>1,000 businesses</span> with top talent.</h2>
-                            <p className='text-sm  max-w-[200px]'> <span className='text-foreground'>Reducing hiring time by 30%</span>  and improving team efficiency across industries.</p>
+                <div className=" lg:mt-0 md:px-6 pt-10 lg:col-span-6 lg:mt-0 my-12 lg:flex ">
+                    <div className='h-auto w-full flex lg:justify-center md:justify-end justify-center relative items-center'>
+                        <div className='lg:w-full md:w-[560px] w-full  bg-primary h-[350px] flex flex-col justify-between text-background p-6 rounded-2xl'>
+                            <h2 className='md:text-xl text-lg max-w-[200px] font-medium'>Successfully connected over <span className='text-foreground'>1,000 businesses</span> with top talent.</h2>
+                            <p className='md:text-sm text-xs max-w-[200px]'> <span className='text-foreground'>Reducing hiring time by 30%</span>  and improving team efficiency across industries.</p>
                         </div>
-                        <div className='absolute -top-10 xl:right-0 -right-6 w-[300px] h-[450px] rounded-2xl'>
+                        <div className='absolute -top-10 xl:right-0 md:-right-6 right-0 md:w-[300px] md:h-[450px] w-[250px] h-[400px] rounded-2xl'>
                             <div className='w-full h-full relative'>
                                 <Image src={'/images/hero-image-1.jpg'} alt='people-image' width={350} height={350} className='h-full shadow-xl w-full rounded-2xl' />
                                 <div className='absolute p-4 top-0 left-0 flex flex-col  justify-between w-full h-full'>

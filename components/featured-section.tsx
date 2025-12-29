@@ -86,8 +86,8 @@ const FeaturedSection = () => {
                     </a> */}
                     </div>
                     <div className="lg:mt-0 px-6 pt-10 lg:col-span-6  lg:flex">
-                        <div className='h-auto w-full flex justify-end relative items-center'>
-                            <div className='h-[500px] w-[450px] rounded-2xl'>
+                        <div className='h-auto w-full flex md:justify-end justify-start relative items-center'>
+                            <div className='h-[500px] md:w-[450px] w-[80%] rounded-2xl'>
                                 <Image src={'/images/feature-section-1.jpg'} alt='team image' width={400} height={400} className='w-full h-full shadow-xl rounded-2xl' />
                             </div>
                             <div className='lg:w-[260px] lg:h-[260px] w-[300px] h-[300px] absolute xl:-left-0 lg:-left-10 left-40 bottom-6'>
@@ -100,8 +100,8 @@ const FeaturedSection = () => {
 
                 <div className="lg:grid flex flex-col max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="lg:mt-0 px-6 pt-10 lg:col-span-6 flex lg:order-1 order-2">
-                        <div className='h-auto w-full pr-3 flex lg:justify-start justify-end relative items-center lg:flex-2 flex-1'>
-                            <div className='h-[500px] w-[450px] rounded-2xl'>
+                        <div className='h-auto w-full pr-3 flex lg:justify-start md:justify-end justify-start relative items-center lg:flex-2 flex-1'>
+                            <div className='h-[500px] md:w-[450px] w-[80%] rounded-2xl'>
                                 <Image src={'/images/feature-section-1.jpg'} alt='team image' width={400} height={400} className='w-full h-full shadow-xl rounded-2xl' />
                             </div>
                             <div className='w-[260px] h-[260px] absolute xl:-right-0 lg:-right-10 left-40 bottom-6'>
