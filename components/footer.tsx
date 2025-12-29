@@ -8,7 +8,7 @@ const Footer = () => {
 
         <footer className="bg-primary w-full rounded-2xl p-6 mt-10 text-background">
             <div className="mx-auto rounded-2xl w-full p-4 py-6 lg:py-8">
-                <div className="md:flex md:justify-between">
+                <div className="md:flex gap-6 md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <a href="#" className="flex items-center">
                             <img src="/images/logo.svg" className="h-12" alt="Logo" />

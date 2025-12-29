@@ -90,7 +90,7 @@ const FeaturedSection = () => {
                             <div className='h-[500px] w-[450px] rounded-2xl'>
                                 <Image src={'/images/feature-section-1.jpg'} alt='team image' width={400} height={400} className='w-full h-full shadow-xl rounded-2xl' />
                             </div>
-                            <div className='lg:w-[260px] lg:h-[260px] w-[300px] h-[300px] absolute lg:-left-0 left-60 bottom-6'>
+                            <div className='lg:w-[260px] lg:h-[260px] w-[300px] h-[300px] absolute xl:-left-0 lg:-left-10 left-60 bottom-6'>
 
                                 <Image src={'/images/successful-jobs.jpg'} alt='successful Jobs image' width={260} height={260} className='h-full shadow-xl w-full rounded-2xl' />
                             </div>
@@ -104,7 +104,7 @@ const FeaturedSection = () => {
                             <div className='h-[500px] w-[450px] rounded-2xl'>
                                 <Image src={'/images/feature-section-1.jpg'} alt='team image' width={400} height={400} className='w-full h-full shadow-xl rounded-2xl' />
                             </div>
-                            <div className='w-[260px] h-[260px] absolute -right-0 bottom-6'>
+                            <div className='w-[260px] h-[260px] absolute xl:-right-0 lg:-right-10 bottom-6'>
 
                                 <Image src={'/images/review-recomend.jpg'} alt='successful Jobs image' width={260} height={260} className='h-full shadow-xl w-full rounded-2xl' />
                             </div>
@@ -115,9 +115,11 @@ const FeaturedSection = () => {
                         <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'> <span className='font-medium'>100+</span> best companies </Badge>
                         <h1 className="max-w-xl mb-4 my-3 text-2xl leading-12 font-normal md:text-3xl xl:text-4xl dark:text-white">Join the best companies to work today! <span className="max-w-2xl mb-4 text-3xl font-semibold leading-none md:text-4xl xl:text-5xl dark:text-white">Motion Recruitment</span> </h1>
                         <p className="max-w-xl mb-10 font-light text-background primary/70 lg:mb-8  lg:text-base ">Find great places to work. Get access to millions of company  reviews. Company name or job title. Find Companies. Do you want to search for salaries?</p>
-                        <a href="#" className="inline-flex items-center justify-center px-8  py-3 mr-3 text-base font-medium text-center text-primary bg-background hover:bg-background rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
-                            More About Us
-                        </a>
+                        <div className='w-auto h-auto'>
+                            <a href="#" className="inline-flex items-center justify-center px-8  py-3 mr-3 text-base font-medium text-center text-primary bg-background hover:bg-background rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                                More About Us
+                            </a>
+                        </div>
                     </div>
                 </div>
             </section>

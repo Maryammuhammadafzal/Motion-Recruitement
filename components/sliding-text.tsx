@@ -4,7 +4,7 @@ import Marquee from 'react-fast-marquee'
 
 const SlidingText = () => {
     return (
-        <Marquee className='mb-10'>
+        <Marquee speed={20} className='mb-10'>
             <div className="overflow-hidden  text-primary">
                 <div className="flex items-center whitespace-nowrap animate-marquee gap-12 py-6">
                     {[...Array(8)].map((_, i) => (
