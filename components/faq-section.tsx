@@ -40,9 +40,9 @@ const FaqSection = () => {
         <section className="w-full h-auto flex justify-center rounded-2xl items-center">
             <div className="py-4  mx-auto max-w-7xl w-full flex flex-col gap-6 items-center sm:py-4 ">
                 <div className="max-w-2xl flex flex-col items-center text-center">
-                    <Badge className='px-3 py-1 my-10 bg-primary/20 text-primary text-sm'>Questions, Answered </Badge>
-                    <h2 className="mb-4 text-4xl tracking-tight max-w-lg text-center font-semibold text-primary ">Frequently Asked Question</h2>
-                    <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8 lg:text-base ">Find quick answers about our recruitment process, job opportunities, and hiring solutions.</p>
+                    <Badge className='px-3 py-1 md:my-10 sm:my-6 my-3 bg-primary/20 text-primary text-sm'>Questions, Answered </Badge>
+                    <h2 className="mb-4 md:text-4xl sm:text-3xl text-2xl tracking-tight max-w-lg text-center font-semibold text-primary ">Frequently Asked Question</h2>
+                    <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8 md:text-base text-sm">Find quick answers about our recruitment process, job opportunities, and hiring solutions.</p>
                 </div>
                 <div className="space-y-8 max-w-2xl bg-primary/5 text-primary p-6 rounded-2xl flex flex-col md:gap-12 w-full md:space-y-0">
                     <Accordion

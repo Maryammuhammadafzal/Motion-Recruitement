@@ -6,14 +6,14 @@ const Footer = () => {
     return (
 
 
-        <footer className="bg-primary w-full rounded-2xl p-6 mt-10 text-background">
-            <div className="mx-auto rounded-2xl w-full p-4 py-6 lg:py-8">
+        <footer className="bg-primary w-full rounded-2xl md:p-6 p-3  mt-10 text-background">
+            <div className="mx-auto rounded-2xl w-full sm:p-4 py-6 lg:py-8">
                 <div className="md:flex gap-6 md:justify-between">
                     <div className="mb-6 md:mb-0">
                         <a href="#" className="flex items-center">
                             <img src="/images/logo.svg" className="h-12" alt="Logo" />
                         </a>
-                        <p className='max-w-sm mt-6 text-sm'>Connecting top tech talent with forward thinking companies through a people first recruitment approach.</p>
+                        <p className='max-w-sm mt-6 sm:text-sm text-xs'>Connecting top tech talent with forward thinking companies through a people first recruitment approach.</p>
                     </div>
                     <div className="grid grid-cols-2 gap-12 sm:gap-12 sm:grid-cols-4">
                         <div>
@@ -100,7 +100,7 @@ const Footer = () => {
                 </div>
                 <hr className="my-6 border-default sm:mx-auto lg:my-8" />
                 <div className="sm:flex sm:items-center sm:justify-between">
-                    <span className="text-sm text-body sm:text-center">Copyright © 2025 <a href="#" className="hover:underline">Motion Recruitment</a>. All Rights Reserved.
+                    <span className="sm:text-sm text-xs text-body sm:text-center">Copyright © 2025 <a href="#" className="hover:underline">Motion Recruitment</a>. All Rights Reserved.
                     </span>
                     <div className="flex mt-4 sm:justify-center sm:mt-0">
                         <a href="#" className="text-sm hover:text-heading">

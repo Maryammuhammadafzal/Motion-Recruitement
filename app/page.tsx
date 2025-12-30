@@ -13,7 +13,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full flex-col items-center justify-between bg-background p-3 sm:items-start">
+      <main className="flex min-h-screen w-full flex-col items-center justify-between bg-background xs:p-3 p-1 sm:items-start">
         <div className="bg-image md:p-6 p-3 rounded-3xl w-full lg:h-screen h-auto">
           <Header />
           <HeroSection />
