@@ -1,5 +1,4 @@
-
-import React from 'react'
+import React from 'react';
 import { Badge } from './ui/badge';
 import Marquee from 'react-fast-marquee';
 import Image from 'next/image';
@@ -33,138 +32,136 @@ const TestimonialSection = () => {
             company: "Digital Agency",
             feedback:
                 "The team understood my design background and connected me with opportunities aligned with my long-term growth.",
-        }
+        },
     ];
+
+    // Duplicate testimonials for smoother continuous marquee effect
+    const extendedTestimonials = [...testimonials, ...testimonials, ...testimonials];
+
     return (
-        <section className="w-full sm:py-8 py-4 h-auto overflow-hidden flex justify-center  items-center">
-            <div className="py-4 mx-auto max-w-7xl bg-primary/10 rounded-2xl w-full flex flex-col items-center ">
-                <div className="max-w-3xl flex flex-col items-center text-center">
-                    <Badge className='px-3 py-1 md:my-10 sm:my-6 my-3 bg-background text-primary md:text-sm text-xs'> Trusted by Candidates & Employers </Badge>
-                    <h2 className="mb-4 md:text-4xl sm:text-3xl text-2xl tracking-tight max-w-lg text-center font-semibold text-primary ">Insight from our users</h2>
-                    <p className="max-w-2xl mb-10 font-light text-primary/70 lg:mb-8 md:text-base text-sm ">From career growth to successful hires, hear how professionals and companies achieve results through our recruitment expertise.</p>
+        <section className="w-full py-8 md:py-12 lg:py-16 overflow-hidden">
+            <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                <div className="text-center mb-10 md:mb-14">
+                    <Badge className="px-3 py-1 bg-background text-primary text-xs sm:text-sm">
+                        Trusted by Candidates & Employers
+                    </Badge>
+                    <h2 className="mt-4 text-2xl sm:text-3xl md:text-4xl font-semibold text-primary tracking-tight">
+                        Insights from our users
+                    </h2>
+                    <p className="mt-4 max-w-2xl mx-auto text-sm sm:text-base text-primary/70 font-light">
+                        From career growth to successful hires, hear how professionals and companies achieve results through our recruitment expertise.
+                    </p>
                 </div>
-                <div className="space-y-3 flex justify-between gap-3 h-[500px] md:gap-4 px-6 w-full md:space-y-0">
-                    <Marquee pauseOnHover speed={30} className=' rotate-90'>
-                        <div className="overflow-hidden h-auto text-primary">
-                            <div className="flex h-auto items-center py-6 ">
-                                {testimonials.map((data, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-white w-[360px] -rotate-90 shrink-0 rounded-2xl p-6 shadow-sm shadow-foreground/30 hover:shadow-lg justify-between flex flex-col h-[300px] transition-shadow duration-300"
-                                    >
-                                        {/* Feedback */}
-                                        <p className="text-base leading-relaxed text-primary mb-6 whitespace-normal">
-                                            “{data.feedback}”
+
+                {/* Responsive Marquee Rows */}
+                <div className="space-y-6 md:space-y-8">
+                    {/* Row 1 - Always visible */}
+                    <Marquee pauseOnHover speed={40} gradient={false}>
+                        {extendedTestimonials.map((data, index) => (
+                            <div
+                                key={`row1-${index}`}
+                                className="mx-4 flex-shrink-0 w-80 sm:w-96 bg-white rounded-2xl p-6 shadow-sm shadow-foreground/20 hover:shadow-xl transition-shadow duration-300"
+                            >
+                                <p className="text-base text-primary leading-relaxed mb-8">
+                                    “{data.feedback}”
+                                </p>
+                                <div className="flex items-center gap-4">
+                                    <Image
+                                        src="/images/user-image.jpg"
+                                        alt={data.name}
+                                        width={48}
+                                        height={48}
+                                        className="rounded-full object-cover"
+                                    />
+                                    <div>
+                                        <h4 className="font-semibold text-primary text-sm">
+                                            {data.name}
+                                        </h4>
+                                        <p className="text-xs text-primary/70">
+                                            {data.role} · {data.company}
                                         </p>
-
-                                        {/* User Info */}
-                                        <div className="flex items-center gap-4">
-                                            <Image
-                                                src="/images/user-image.jpg"
-                                                alt={data.name}
-                                                width={48}
-                                                height={48}
-                                                className="rounded-full object-cover"
-                                            />
-
-                                            <div className="flex flex-col">
-                                                <h4 className="font-semibold text-primary text-sm">
-                                                    {data.name}
-                                                </h4>
-                                                <p className="text-xs text-primary/70">
-                                                    {data.role} · {data.company}
-                                                </p>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                ))}
+                                </div>
                             </div>
-
-                        </div>
+                        ))}
                     </Marquee>
-                    <Marquee pauseOnHover direction='right' speed={30} className='md-hidden rotate-90 '>
-                        <div className="overflow-hidden h-auto text-primary">
-                            <div className="flex h-auto items-center py-6 ">
-                                {testimonials.map((data, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-white w-[360px] -rotate-90 shrink-0 rounded-2xl p-6 shadow-sm shadow-foreground/30 hover:shadow-lg justify-between flex flex-col h-[300px] transition-shadow duration-300"
-                                    >
-                                        {/* Feedback */}
-                                        <p className="text-base leading-relaxed text-primary mb-6 whitespace-normal">
-                                            “{data.feedback}”
+
+                    {/* Row 2 - Visible on md and above */}
+                    <Marquee
+                        pauseOnHover
+                        speed={40}
+                        direction="right"
+                        gradient={false}
+                        className="hidden md:block"
+                    >
+                        {extendedTestimonials.map((data, index) => (
+                            <div
+                                key={`row2-${index}`}
+                                className="mx-4 flex-shrink-0 w-80 sm:w-96 bg-white rounded-2xl p-6 shadow-sm shadow-foreground/20 hover:shadow-xl transition-shadow duration-300"
+                            >
+                                <p className="text-base text-primary leading-relaxed mb-8">
+                                    “{data.feedback}”
+                                </p>
+                                <div className="flex items-center gap-4">
+                                    <Image
+                                        src="/images/user-image.jpg"
+                                        alt={data.name}
+                                        width={48}
+                                        height={48}
+                                        className="rounded-full object-cover"
+                                    />
+                                    <div>
+                                        <h4 className="font-semibold text-primary text-sm">
+                                            {data.name}
+                                        </h4>
+                                        <p className="text-xs text-primary/70">
+                                            {data.role} · {data.company}
                                         </p>
-
-                                        {/* User Info */}
-                                        <div className="flex items-center gap-4">
-                                            <Image
-                                                src="/images/user-image.jpg"
-                                                alt={data.name}
-                                                width={48}
-                                                height={48}
-                                                className="rounded-full object-cover"
-                                            />
-
-                                            <div className="flex flex-col">
-                                                <h4 className="font-semibold text-primary text-sm">
-                                                    {data.name}
-                                                </h4>
-                                                <p className="text-xs text-primary/70">
-                                                    {data.role} · {data.company}
-                                                </p>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                ))}
+                                </div>
                             </div>
-
-                        </div>
+                        ))}
                     </Marquee>
-                    <Marquee pauseOnHover speed={30} className='lg-hidden rotate-90 '>
-                        <div className="overflow-hidden h-auto text-primary">
-                            <div className="flex h-auto items-center py-6 ">
-                                {testimonials.map((data, index) => (
-                                    <div
-                                        key={index}
-                                        className="bg-white w-[360px] -rotate-90 shrink-0 rounded-2xl p-6 shadow-sm shadow-foreground/30 hover:shadow-lg justify-between flex flex-col h-[300px] transition-shadow duration-300"
-                                    >
-                                        {/* Feedback */}
-                                        <p className="text-base leading-relaxed text-primary mb-6 whitespace-normal">
-                                            “{data.feedback}”
+
+                    {/* Row 3 - Visible only on lg and above */}
+                    <Marquee
+                        pauseOnHover
+                        speed={40}
+                        gradient={false}
+                        className="hidden lg:block"
+                    >
+                        {extendedTestimonials.map((data, index) => (
+                            <div
+                                key={`row3-${index}`}
+                                className="mx-4 flex-shrink-0 w-80 sm:w-96 bg-white rounded-2xl p-6 shadow-sm shadow-foreground/20 hover:shadow-xl transition-shadow duration-300"
+                            >
+                                <p className="text-base text-primary leading-relaxed mb-8">
+                                    “{data.feedback}”
+                                </p>
+                                <div className="flex items-center gap-4">
+                                    <Image
+                                        src="/images/user-image.jpg"
+                                        alt={data.name}
+                                        width={48}
+                                        height={48}
+                                        className="rounded-full object-cover"
+                                    />
+                                    <div>
+                                        <h4 className="font-semibold text-primary text-sm">
+                                            {data.name}
+                                        </h4>
+                                        <p className="text-xs text-primary/70">
+                                            {data.role} · {data.company}
                                         </p>
-
-                                        {/* User Info */}
-                                        <div className="flex items-center gap-4">
-                                            <Image
-                                                src="/images/user-image.jpg"
-                                                alt={data.name}
-                                                width={48}
-                                                height={48}
-                                                className="rounded-full object-cover"
-                                            />
-
-                                            <div className="flex flex-col">
-                                                <h4 className="font-semibold text-primary text-sm">
-                                                    {data.name}
-                                                </h4>
-                                                <p className="text-xs text-primary/70">
-                                                    {data.role} · {data.company}
-                                                </p>
-                                            </div>
-                                        </div>
-
                                     </div>
-                                ))}
+                                </div>
                             </div>
-
-                        </div>
+                        ))}
                     </Marquee>
                 </div>
             </div>
         </section>
-    )
-}
+    );
+};
 
-export default TestimonialSection
+export default TestimonialSection;
