@@ -22,7 +22,7 @@ const Header = () => {
               <a href="#" className="block py-2 px-3 text-background rounded hover:text-foreground md:p-0" aria-current="page">Find Jobs</a>
             </li>
             <li>
-              <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" className="flex  items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+              <button id="multiLevelDropdownButton" data-dropdown-toggle="multi-dropdown" className="flex  items-center justify-between w-full py-2 px-3 rounded font-medium text-heading hover:text-foreground cursor-pointer md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
                 Client Solution
                 {/* <svg className="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg> */}
               </button>
@@ -64,13 +64,13 @@ const Header = () => {
               </div>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
+              <a href="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary hover:text-foreground md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">About</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Insights</a>
+              <a href="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary hover:text-foreground md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Insights</a>
             </li>
             <li>
-              <a href="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tech in motion</a>
+              <a href="#" className="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary hover:text-foreground md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Tech in motion</a>
             </li>
           </ul>
 
