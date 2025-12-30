@@ -4,34 +4,34 @@ import { Badge } from './ui/badge'
 
 const HeroSection = () => {
     return (
-        <section className="pt-24 text-primary">
+        <section className="md:pt-24 pt-12 text-primary">
 
-            <div className="grid max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+            <div className="grid max-w-screen-xl sm:px-4 px-0 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                 <div className="mr-auto place-self-center lg:col-span-6">
-                    <Badge className='px-3 py-1 my-10 bg-primary/20 text-primary text-sm'> <span className='font-medium'>250+</span> trusted client </Badge>
+                    <Badge className='px-3 py-1 md:my-10 sm:my-6 my-3 bg-primary/20 text-primary md:text-sm text-xs'> <span className='font-medium'>250+</span> trusted client </Badge>
                     <h1 className="max-w-xl mb-4 my-3 text-4xl font-normal leading-none md:text-5xl xl:text-6xl dark:text-white">Your Next Career Move <span className="max-w-2xl mb-4 text-4xl font-semibold leading-none md:text-5xl xl:text-6xl dark:text-white">Starts Here</span> </h1>
-                    <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8  lg:text-base ">Specialized tech recruitment that matches top talent with forward thinking companies, contract, permanent, and remote roles.</p>
-                    <a href="#" className="inline-flex items-center justify-center px-8  py-3 mr-3 text-base font-medium text-center text-background bg-primary hover:bg-secondary rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                    <p className="max-w-xl mb-10 font-light text-primary/70 lg:mb-8  sm:text-base text-sm ">Specialized tech recruitment that matches top talent with forward thinking companies, contract, permanent, and remote roles.</p>
+                    <a href="#" className="inline-flex items-center justify-center sm:px-8 px-5  sm:py-3 py-2 mr-3 sm:text-base text-sm font-medium text-center text-background bg-primary hover:bg-secondary rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                         Find Jobs
                     </a>
-                    <a href="#" className="inline-flex items-center justify-center px-8 py-3 text-base font-medium text-center text-primary bg-primary/20 border border-gray-300 rounded-full hover:bg-primary/30 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
+                    <a href="#" className="inline-flex items-center justify-center sm:px-8 px-5  sm:py-3 py-2 mr-3 sm:text-base text-sm font-medium text-center text-primary bg-primary/20 border border-gray-300 rounded-full hover:bg-primary/30 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800">
                         Hire Talent
                     </a>
                 </div>
-                <div className=" lg:mt-0 md:px-6 pt-10 lg:col-span-6 lg:mt-0 my-12 lg:flex ">
+                <div className=" lg:mt-0 md:px-6 px-0 pt-10 lg:col-span-6 lg:mt-0 my-12 lg:flex ">
                     <div className='h-auto w-full flex lg:justify-center md:justify-end justify-center relative items-center'>
-                        <div className='lg:w-full md:w-[560px] w-full  bg-primary h-[350px] flex flex-col justify-between text-background p-6 rounded-2xl'>
-                            <h2 className='md:text-xl text-lg max-w-[200px] font-medium'>Successfully connected over <span className='text-foreground'>1,000 businesses</span> with top talent.</h2>
-                            <p className='md:text-sm text-xs max-w-[200px]'> <span className='text-foreground'>Reducing hiring time by 30%</span>  and improving team efficiency across industries.</p>
+                        <div className='lg:w-full md:w-[560px] w-full  bg-primary sm:h-[350px] h-[300px] flex flex-col justify-between text-background p-6 rounded-2xl'>
+                            <h2 className='lg:text-xl md:text-lg sm:text-base text-sm sm:max-w-[200px] xs:max-w-[150px] max-w-[120px] font-medium'>Successfully connected over <span className='text-foreground'>1,000 businesses</span> with top talent.</h2>
+                            <p className='md:text-sm sm:text-xs text-[10px] sm:max-w-[200px] xs:max-w-[150px] max-w-[120px]'> <span className='text-foreground'>Reducing hiring time by 30%</span>  and improving team efficiency across industries.</p>
                         </div>
-                        <div className='absolute -top-10 xl:right-0 md:-right-6 right-0 md:w-[300px] md:h-[450px] w-[250px] h-[400px] rounded-2xl'>
+                        <div className='absolute -top-10 xl:right-0 md:-right-6 right-0 md:w-[300px] md:h-[450px] sm:w-[250px] w-[200px] sm:h-[400px] h-[350px] rounded-2xl'>
                             <div className='w-full h-full relative'>
                                 <Image src={'/images/hero-image-1.jpg'} alt='people-image' width={350} height={350} className='h-full shadow-xl w-full rounded-2xl' />
                                 <div className='absolute p-4 top-0 left-0 flex flex-col  justify-between w-full h-full'>
-                                    <Badge className=' px-3 py-1 bg-background text-primary text-xs'> Top rated specialist </Badge>
+                                    <Badge className=' px-3 py-1 bg-background text-primary sm:text-xs text-[10px]'> Top rated specialist </Badge>
                                     <div className='flex flex-col pb-6'>
-                                        <h4 className='font-medium text-xl text-background'>Sarah Mitcheal</h4>
-                                        <p className='text-background'>Mern Stack Developer</p>
+                                        <h4 className='font-medium md:text-xl sm:text-lg text-base text-background'>Sarah Mitcheal</h4>
+                                        <p className='text-background md:text-base text-sm'>Mern Stack Developer</p>
                                     </div>
                                 </div>
                             </div>

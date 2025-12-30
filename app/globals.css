@@ -161,3 +161,15 @@
     }
   }
 }
+
+
+@media (max-width : 1028px) {
+  .lg-hidden {
+    display: none !important;
+  }
+}
+@media (max-width : 768px) {
+  .md-hidden {
+    display: none !important;
+  }
+}

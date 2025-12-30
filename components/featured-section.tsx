@@ -72,12 +72,12 @@ const FeaturedSection = () => {
         <div className='px-1 py-6 w-full'>
             <section className="bg-primary rounded-2xl w-full text-background">
 
-                <div className="grid max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                <div className="grid max-w-screen-xl md:px-4 px-2 md:py-8 py-4 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="mr-auto place-self-center lg:col-span-6 pl-3">
-                        <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'> <span className='font-medium'>100+</span> Successful Jobs </Badge>
-                        <h1 className="max-w-xl mb-4 my-3 text-2xl leading-12 font-normal md:text-3xl xl:text-4xl dark:text-white">Increase your job success rate wih <span className="max-w-2xl mb-4 text-3xl font-semibold leading-none md:text-4xl xl:text-5xl dark:text-white">Motion Recruitment</span> </h1>
-                        <p className="max-w-xl mb-10 font-light text-background primary/70 lg:mb-8  lg:text-base ">Specialized tech recruitment that matches top talent with forward thinking companies, contract, permanent, and remote roles.</p>
-                        <a href="#" className="inline-flex items-center justify-center px-8  py-3 mr-3 text-base font-medium text-center text-primary bg-background hover:bg-background rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                        <Badge className='px-3 py-1 md:my-10 sm:my-6 my-3 bg-background text-primary md:text-sm text-xs'> <span className='font-medium'>100+</span> Successful Jobs </Badge>
+                        <h1 className="max-w-xl mb-4 my-3 md:text-2xl sm:text-xl text-lg md:leading-12 sm:leading-10 leading-8 font-normal md:text-3xl xl:text-4xl dark:text-white">Increase your job success rate wih <span className="max-w-2xl mb-4 sm:text-3xl text-2xl font-semibold leading-none md:text-4xl xl:text-5xl dark:text-white">Motion Recruitment</span> </h1>
+                        <p className="max-w-xl mb-10 font-light text-background primary/70 lg:mb-8  lg:text-base text-sm ">Specialized tech recruitment that matches top talent with forward thinking companies, contract, permanent, and remote roles.</p>
+                        <a href="#" className="inline-flex items-center justify-center sm:px-8 px-5  sm:py-3 py-2 mr-3 sm:text-base text-sm font-medium text-center text-primary bg-background hover:bg-background rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                             Find Jobs
                             {/* <svg className="w-5 h-5 ml-2 -mr-1" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg> */}
                         </a>
@@ -87,10 +87,10 @@ const FeaturedSection = () => {
                     </div>
                     <div className="lg:mt-0 px-6 pt-10 lg:col-span-6  lg:flex">
                         <div className='h-auto w-full flex md:justify-end justify-start relative items-center'>
-                            <div className='h-[500px] md:w-[450px] w-[80%] rounded-2xl'>
+                            <div className='md:h-[500px] sm:h-[420px] h-[360px] md:w-[450px] w-[80%] rounded-2xl'>
                                 <Image src={'/images/feature-section-1.jpg'} alt='team image' width={400} height={400} className='w-full h-full shadow-xl rounded-2xl' />
                             </div>
-                            <div className='lg:w-[260px] lg:h-[260px] w-[300px] h-[300px] absolute xl:-left-0 lg:-left-10 left-40 bottom-6'>
+                            <div className='lg:w-[260px] lg:h-[260px] md:w-[300px] sm:w-[250px] w-[200px] md:h-[300px] sm:h-[250px] h-[200px] absolute xl:-left-0 lg:-left-10 md:left-40 right-0 bottom-6'>
 
                                 <Image src={'/images/successful-jobs.jpg'} alt='successful Jobs image' width={260} height={260} className='h-full shadow-xl w-full rounded-2xl' />
                             </div>
@@ -98,25 +98,24 @@ const FeaturedSection = () => {
                     </div>
                 </div>
 
-                <div className="lg:grid flex flex-col max-w-screen-xl px-4 py-8 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
+                <div className="lg:grid flex flex-col max-w-screen-xl md:px-4 px-2 md:py-8 py-4 mx-auto  lg:gap-8 xl:gap-0 lg:py-16 lg:grid-cols-12">
                     <div className="lg:mt-0 px-6 pt-10 lg:col-span-6 flex lg:order-1 order-2">
                         <div className='h-auto w-full pr-3 flex lg:justify-start md:justify-end justify-start relative items-center lg:flex-2 flex-1'>
-                            <div className='h-[500px] md:w-[450px] w-[80%] rounded-2xl'>
+                            <div className='md:h-[500px] sm:h-[420px] h-[360px] md:w-[450px] w-[80%] rounded-2xl'>
                                 <Image src={'/images/feature-section-1.jpg'} alt='team image' width={400} height={400} className='w-full h-full shadow-xl rounded-2xl' />
                             </div>
-                            <div className='w-[260px] h-[260px] absolute xl:-right-0 lg:-right-10 left-40 bottom-6'>
-
+                            <div className='lg:w-[260px] lg:h-[260px] md:w-[300px] sm:w-[250px] w-[200px] md:h-[300px] sm:h-[250px] h-[200px] absolute xl:-right-0 lg:-right-10 md:right-70 right-0 bottom-6'>
                                 <Image src={'/images/review-recomend.jpg'} alt='successful Jobs image' width={260} height={260} className='h-full shadow-xl w-full rounded-2xl' />
                             </div>
 
                         </div>
                     </div>
                     <div className="mr-auto place-self-center lg:pl-10 pl-3 lg:col-span-6 flex flex-col lg:order-2 order-1">
-                        <Badge className='px-3 py-1 my-10 bg-background text-primary text-sm'> <span className='font-medium'>100+</span> best companies </Badge>
-                        <h1 className="max-w-xl mb-4 my-3 text-2xl leading-12 font-normal md:text-3xl xl:text-4xl dark:text-white">Join the best companies to work today! <span className="max-w-2xl mb-4 text-3xl font-semibold leading-none md:text-4xl xl:text-5xl dark:text-white">Motion Recruitment</span> </h1>
-                        <p className="max-w-xl mb-10 font-light text-background primary/70 lg:mb-8  lg:text-base ">Find great places to work. Get access to millions of company  reviews. Company name or job title. Find Companies. Do you want to search for salaries?</p>
+                        <Badge className='px-3 py-1 md:my-10 sm:my-6 my-3 bg-background text-primary md:text-sm text-xs'> <span className='font-medium'>100+</span> best companies </Badge>
+                        <h1 className="max-w-xl mb-4 my-3 md:text-2xl sm:text-xl text-lg md:leading-12 sm:leading-10 leading-8 font-normal md:text-3xl xl:text-4xl dark:text-white">Join the best companies to work today! <span className="max-w-2xl mb-4 sm:text-3xl text-2xl  font-semibold leading-none md:text-4xl xl:text-5xl dark:text-white">Motion Recruitment</span> </h1>
+                        <p className="max-w-xl mb-10 font-light text-background primary/70 lg:mb-8  lg:text-base text-sm ">Find great places to work. Get access to millions of company  reviews. Company name or job title. Find Companies. Do you want to search for salaries?</p>
                         <div className='w-auto h-auto'>
-                            <a href="#" className="inline-flex items-center justify-center px-8  py-3 mr-3 text-base font-medium text-center text-primary bg-background hover:bg-background rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
+                            <a href="#" className="inline-flex items-center justify-center sm:px-8 px-5  sm:py-3 py-2 mr-3 sm:text-base text-sm font-medium text-center text-primary bg-background hover:bg-background rounded-full focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900">
                                 More About Us
                             </a>
                         </div>
